@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    background-color:  #9fa2a6;
+    min-height: 100vh;
+}
+
+.contenedor-fechario {
+    position: relative;
+    width: 280px;
+}
+
+/* Campo de entrada */
+.grupo-entrada {
+    display: flex;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+.grupo-entrada input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #333;
+}
+
+.grupo-entrada .boton-icono {
+    background: #fff;
+    border: none;
+    border-left: 2px solid #000;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grupo-entrada .boton-icono:hover {
+    background-color: #f0f0f0;
+}
+
+/* Desplegable del calendario con posición absoluta */
+.desplegable-calendario {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 6px;
+    border: 2px solid #000;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.encabezado-calendario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 2px solid #000;
+}
+
+.encabezado-calendario .mes-anio {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.encabezado-calendario .boton-navegacion {
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px 8px;
+}
+
+.encabezado-calendario .boton-navegacion:hover {
+    background-color: #eee;
+}
+
+/* Grilla de días */
+.rejilla-calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.nombre-dia {
+    font-weight: bold;
+    padding: 8px 0;
+    border-bottom: 1px solid #000;
+    font-size: 14px;
+}
+
+.dia {
+    padding: 8px 0;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nombre-dia:nth-child(7n),
+.dia:nth-child(7n) {
+    border-right: none;
+}
+
+.dia:hover:not(.vacio) {
+    background-color: #e6f0ff;
+}
+
+.dia.vacio {
+    cursor: default;
+    background-color: #fafafa;
+}

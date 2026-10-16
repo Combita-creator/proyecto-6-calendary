@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datepicker UI Estático</title>
+    <!-- Ícono para el boton -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="principal.css">
+</head>
+
+<body>
+
+    <!-- Contenedor principal -->
+    <div class="contenedor-fechario">
+
+        <!-- Campo de entrada y botón -->
+        <div class="grupo-entrada">
+            <input type="text" placeholder="dd / mm / yyyy" readonly>
+            <button type="button" class="boton-icono">
+                <i class="fa-regular fa-calendar-days"></i>
+            </button>
+        </div>
+
+        <!-- Calendario desplegable -->
+        <div class="desplegable-calendario">
+
+            <!-- Encabezado del mes -->
+            <div class="encabezado-calendario">
+                <button class="boton-navegacion">&lt;</button>
+                <span class="mes-anio">December 2022</span>
+                <button class="boton-navegacion">&gt;</button>
+            </div>
+
+            <!-- Matriz de días -->
+            <div class="rejilla-calendario">
+                <div class="nombre-dia">S</div>
+                <div class="nombre-dia">M</div>
+                <div class="nombre-dia">T</div>
+                <div class="nombre-dia">W</div>
+                <div class="nombre-dia">T</div>
+                <div class="nombre-dia">F</div>
+                <div class="nombre-dia">S</div>
+
+                <!-- Celdas vacías previas -->
+                <div class="dia vacio"></div>
+                <div class="dia vacio"></div>
+                <div class="dia vacio"></div>
+                <div class="dia vacio"></div>
+
+                <!-- Días del mes -->
+                <div class="dia">1</div>
+                <div class="dia">2</div>
+                <div class="dia">3</div>
+                <div class="dia">4</div>
+                <div class="dia">5</div>
+                <div class="dia">6</div>
+                <div class="dia">7</div>
+                <div class="dia">8</div>
+                <div class="dia">9</div>
+                <div class="dia">10</div>
+                <div class="dia">11</div>
+                <div class="dia">12</div>
+                <div class="dia">13</div>
+                <div class="dia">14</div>
+                <div class="dia">15</div>
+                <div class="dia">16</div>
+                <div class="dia">17</div>
+                <div class="dia">18</div>
+                <div class="dia">19</div>
+                <div class="dia">20</div>
+                <div class="dia">21</div>
+                <div class="dia">22</div>
+                <div class="dia">23</div>
+                <div class="dia">24</div>
+                <div class="dia">25</div>
+                <div class="dia">26</div>
+                <div class="dia">27</div>
+                <div class="dia">28</div>
+                <div class="dia">29</div>
+                <div class="dia">30</div>
+                <div class="dia">31</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
